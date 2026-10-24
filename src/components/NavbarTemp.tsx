@@ -1,8 +1,14 @@
-import ToggleTheme from "./ToggleTheme"
+import ToggleTheme from "./ToggleTheme";
 
-function NavbarTemp() {
+type NavbarTempProps = {
+  isDark: boolean;
+  onToggle: () => void;
+};
+
+function NavbarTemp({ isDark, onToggle }: NavbarTempProps) {
+   
     return (
-    <header className="mx-auto mt-5 max-w-6xl px-4">
+    <header className="mx-auto pt-5 max-w-6xl px-4">
       <nav className="flex items-center justify-between rounded-full border border-white/10 bg-slate-900 px-6 py-4 text-white shadow-lg">
         <a href="#" className="text-lg font-bold tracking-tight">
           MN<span className="text-blue-400">.</span>
@@ -15,7 +21,8 @@ function NavbarTemp() {
         </div>
 
         <div className="flex items-center gap-3">
-          <ToggleTheme/>        
+          <ToggleTheme isDark={isDark} onToggle={onToggle} />
+          {/* <ToggleTheme/>         */}
 
           <a
             href="#contact"

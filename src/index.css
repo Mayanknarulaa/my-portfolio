@@ -1,4 +1,17 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+.cursor-glow {
+  background-image:
+    radial-gradient(
+      600px circle at var(--cursor-x, 50%) var(--cursor-y, 50%),
+      rgba(59, 130, 246, 0.16),
+      transparent 70%
+    );
+}
+
+
 /* :root {
   --text: #6b6375;
   --text-h: #08060d;
