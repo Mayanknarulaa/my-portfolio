@@ -43,11 +43,6 @@ function App() {
       <a href="#" className="rounded-full border border-slate-400/50 px-6 py-3 font-medium transition hover:border-blue-500 hover:text-blue-600">Contact Me</a>
     </div>
     </section>
-
-    <section className="flex-auto min-h-screen items-center">
-      <h1 className="text-center text-xl text-white-400">01 / ABOUT ME</h1>
-      <h1 className="text-center mt-5">Turning ideas into {" "}<span className="text-blue-500">digital experiences.</span></h1>
-    </section>
     </div>
 
     
